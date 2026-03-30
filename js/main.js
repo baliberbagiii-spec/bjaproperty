@@ -1,4 +1,4 @@
-const API_BASE = 'https://script.google.com/macros/s/AKfycbyIEQPwE1YHQGQufIc2i9RjkeghTMcD6PZ6M9xIDpznJzQ_NVhqZmOu559vDHeWpV-wrQ/exec';
+const API_BASE = 'https://script.google.com/macros/s/AKfycbx-S6Ci6nKFPn0QMtXwQFKYyrU0_5TKz6KleBQsP-6E9SPJawh9xpRX0F1dnKwnRRLhiQ/exec';
 
 function formatRupiah(amount) {
   if (!amount) return 'Harga tidak tersedia';
