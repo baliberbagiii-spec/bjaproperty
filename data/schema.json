@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Bina Jaya Abadi Properti",
+  "url": "https://www.binajayaabadi.co",
+  "logo": "https://www.binajayaabadi.co/logo.png",
+  "description": "Jual beli tanah, rumah, dan properti premium di Bali.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bali",
+    "addressCountry": "ID"
+  },
+  "telephone": "+6281234567890",
+  "areaServed": "ID",
+  "sameAs": [
+    "https://www.instagram.com/binajayaabadi",
+    "https://www.facebook.com/profile.php?id=61578539440148"
+  ]
+}

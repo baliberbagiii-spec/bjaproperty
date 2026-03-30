@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bina Jaya Abadi Properti - Properti di Bali</title>
+  <meta name="description" content="Bina Jaya Abadi Properti: Jual beli tanah, rumah, dan properti premium di Bali. Daftar properti eksklusif Canggu, Ubud, Jimbaran." />
+  <meta name="keywords" content="properti di Bali, jual beli tanah Bali, Bina Jaya Abadi Properti" />
+  <meta property="og:title" content="Bina Jaya Abadi Properti - Properti di Bali" />
+  <meta property="og:description" content="Listing properti premium di Bali dengan data langsung dari Google Sheets." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Bina+Jaya+Abadi+Properti" />
+
+  <!-- JSON-LD Schema Reference: data/schema.json -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"RealEstateAgent",
+    "name":"Bina Jaya Abadi Properti",
+    "url":"https://www.binajayaabadi.co",
+    "logo":"https://www.binajayaabadi.co/logo.png",
+    "description":"Jual beli tanah, rumah, dan properti premium di Bali.",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Bali",
+      "addressCountry":"ID"
+    },
+    "telephone":"+6281234567890",
+    "areaServed":"ID",
+    "sameAs":["https://www.instagram.com/binajayaabadi","https://www.facebook.com/profile.php?id=61578539440148"]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-slate-100 text-slate-800">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="img/logo_bja.png" alt="Bina Jaya Abadi Properti" class="h-10 w-auto" />
+      </a>
+      <nav class="hidden md:flex gap-6 text-slate-700">
+        <a href="#properties" class="hover:text-emerald-600">Properti</a>
+        <a href="#why" class="hover:text-emerald-600">Mengapa Kami</a>
+        <a href="#contact" class="hover:text-emerald-600">Hubungi</a>
+      </nav>
+      <a href="#contact" class="px-4 py-2 rounded-lg bg-emerald-600 text-white text-sm font-medium">Hubungi Kami</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-bg min-h-[80vh] flex items-center">
+      <div class="mx-auto max-w-6xl px-4 py-20 text-white">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Temukan Investasi Properti Terbaik di Bali</h1>
+        <p class="mt-4 text-lg md:text-xl text-emerald-100">Vila, rumah, dan tanah premium dengan potensi ROI tinggi. Dijamin transparan & profesional.</p>
+        <a href="#properties" class="mt-8 inline-block rounded-lg bg-amber-400 px-6 py-3 font-semibold text-slate-900 hover:bg-amber-300">Lihat Daftar Properti</a>
+      </div>
+    </section>
+
+    <section id="properties" class="py-16">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 class="text-3xl font-bold text-slate-900">Daftar Properti</h2>
+        <p class="mt-2 text-slate-600">Properti Sedang Diproses</p>
+        <div id="property-grid" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <section id="why" class="bg-white py-16">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 class="text-3xl font-bold text-slate-900">Kenapa Memilih Bina Jaya Abadi</h2>
+        <div class="mt-6 grid gap-6 md:grid-cols-3">
+          <article class="rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="font-semibold text-emerald-700">Local Expert</h3>
+            <p class="mt-2 text-slate-600">Tim kami berpengalaman dan memahami regulasi properti Bali.</p>
+          </article>
+          <article class="rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="font-semibold text-emerald-700">Properti Terverifikasi</h3>
+            <p class="mt-2 text-slate-600">Listing hanya properti siap jual dengan dokumen lengkap.</p>
+          </article>
+          <article class="rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="font-semibold text-emerald-700">Pendampingan Lengkap</h3>
+            <p class="mt-2 text-slate-600">Dari survei sampai transaksi, satu titik kontak.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-slate-100">
+      <div class="mx-auto max-w-4xl px-4">
+        <h2 class="text-3xl font-bold text-slate-900">Hubungi Kami</h2>
+        <p class="mt-2 text-slate-600">Isi form di bawah untuk mendapatkan informasi lengkap dan konsultasi gratis.</p>
+        <form id="lead-form" class="mt-6 space-y-4 rounded-xl bg-white p-6 shadow">
+          <input name="nama_lengkap" placeholder="Nama Lengkap" required class="w-full rounded border p-3 focus:border-emerald-500 focus:outline-none" />
+          <input type="email" name="email" placeholder="Email" required class="w-full rounded border p-3 focus:border-emerald-500 focus:outline-none" />
+          <input name="no_whatsapp" placeholder="WhatsApp" required class="w-full rounded border p-3 focus:border-emerald-500 focus:outline-none" />
+          <textarea name="pesan" placeholder="Pesan" rows="4" required class="w-full rounded border p-3 focus:border-emerald-500 focus:outline-none"></textarea>
+          <button type="submit" class="w-full rounded bg-emerald-600 px-4 py-3 font-semibold text-white hover:bg-emerald-500">Kirim Pesan</button>
+          <p id="form-status" class="text-sm text-slate-600"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-200 py-8">
+    <div class="mx-auto max-w-6xl px-4 grid gap-6 md:grid-cols-3">
+      <div>
+        <h3 class="font-semibold text-white">Bina Jaya Abadi Properti</h3>
+        <p class="mt-2">Alamat: Bali, Indonesia</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white">Kontak</h3>
+        <p class="mt-2">Email: info@binajayaabadi.co</p>
+        <p>WhatsApp: +6281234567890</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white">Media Sosial</h3>
+        <ul class="mt-2 space-y-1">
+          <li><a href="#" class="text-emerald-300 hover:underline">Instagram</a></li>
+          <li><a href="#" class="text-emerald-300 hover:underline">Facebook</a></li>
+          <li><a href="#" class="text-emerald-300 hover:underline">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-6 text-center text-sm">© 2026 Bina Jaya Abadi Properti. All Rights Reserved.</p>
+  </footer>
+
+  <!-- WA Chat Bubble -->
+  <a href="https://wa.me/6283840335231" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full bg-emerald-600 px-4 py-3 text-white shadow-lg hover:bg-emerald-500 transition" aria-label="Chat via WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+      <path d="M20.52 3.48A11.82 11.82 0 0 0 12.02.1 11.84 11.84 0 0 0 1.7 10.43C1.6 12.56 2.4 14.62 3.92 16.18L2 22l5.82-1.92c1.52 1.08 3.3 1.65 5.18 1.65h.02c6.54 0 11.87-5.32 11.87-11.87 0-3.18-1.24-6.16-3.48-8.42ZM12.02 21.41a9.34 9.34 0 0 1-4.76-1.35l-.34-.2-3.45 1.14 1.17-3.36-.22-.35A9.28 9.28 0 1 1 21.3 12.02 9.29 9.29 0 0 1 12.02 21.41Zm5.35-7.14c-.29-.15-1.7-.84-1.96-.93-.26-.1-.45-.15-.64.15s-.73.93-.89 1.12c-.16.2-.31.22-.58.08a6.4 6.4 0 0 1-1.89-1.17 7 7 0 0 1-1.3-1.62c-.14-.26-.01-.4.11-.53.11-.12.25-.31.37-.47.12-.16.16-.27.24-.45.08-.18.04-.34-.02-.48-.06-.14-.64-1.53-.88-2.1-.23-.55-.47-.48-.64-.49h-.55a1.27 1.27 0 0 0-.93.44c-.31.34-1.2 1.18-1.2 2.87s1.23 3.33 1.4 3.56c.17.24 2.43 3.7 5.9 5.18a13.76 13.76 0 0 0 1.8.74c.75.23 1.44.2 1.98.12.61-.09 1.7-.69 1.94-1.36.24-.66.24-1.23.17-1.36-.07-.13-.26-.21-.55-.36Z"/>
+    </svg>
+    <span class="text-sm font-medium">Chat WhatsApp</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

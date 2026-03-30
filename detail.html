@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Properti - Bina Jaya Abadi Properti</title>
+  <meta name="description" content="Detail properti premium Bali di Bina Jaya Abadi Properti." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="img/logo_bja.png" alt="Bina Jaya Abadi" class="h-10 w-auto" />
+      </a>
+      <nav class="hidden md:flex gap-6 text-slate-700">
+        <a href="index.html#properties" class="hover:text-emerald-600">Properti</a>
+        <a href="index.html#why" class="hover:text-emerald-600">Mengapa Kami</a>
+        <a href="index.html#contact" class="hover:text-emerald-600">Hubungi</a>
+      </nav>
+      <a href="index.html#contact" class="px-4 py-2 rounded-lg bg-emerald-600 text-white text-sm font-medium">Hubungi Kami</a>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 py-10">
+    <div class="grid gap-8 lg:grid-cols-3">
+      <div class="lg:col-span-2">
+        <div class="rounded-xl bg-white shadow-sm overflow-hidden">
+          <img id="main-image" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1470&q=80" alt="Properti Utama" class="h-96 w-full object-cover" />
+          <div class="p-6">
+            <h1 id="title" class="text-3xl font-bold text-slate-900">Sewa Properti di Demak (Unit 1)</h1>
+            <p id="summary" class="mt-2 text-slate-600">Lokasi strategis, dekat pusat kota, dilengkapi fasilitas lengkap dan harga sewa bersaing.</p>
+            <div id="tags" class="mt-4 flex flex-wrap gap-2 text-sm">
+              <span class="rounded-full bg-emerald-100 px-3 py-1 text-emerald-700">3 Kamar Tidur</span>
+              <span class="rounded-full bg-emerald-100 px-3 py-1 text-emerald-700">2 Kamar Mandi</span>
+              <span class="rounded-full bg-emerald-100 px-3 py-1 text-emerald-700">200 m²</span>
+              <span class="rounded-full bg-amber-100 px-3 py-1 text-amber-800">Sewa Jakarta</span>
+            </div>
+
+            <div id="gallery" class="mt-6 grid grid-cols-2 gap-4">
+              <img src="https://images.unsplash.com/photo-1560185127-6d989b2c4b81?auto=format&fit=crop&w=800&q=80" alt="Foto 1" class="h-44 w-full rounded-lg object-cover" />
+              <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Foto 2" class="h-44 w-full rounded-lg object-cover" />
+              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Foto 3" class="h-44 w-full rounded-lg object-cover" />
+              <img src="https://images.unsplash.com/photo-1598928506317-e9f9ec6f0aca?auto=format&fit=crop&w=800&q=80" alt="Foto 4" class="h-44 w-full rounded-lg object-cover" />
+            </div>
+
+            <h2 class="mt-8 text-2xl font-semibold text-slate-900">Deskripsi Properti</h2>
+            <p id="description" class="mt-3 text-slate-600 leading-relaxed">Properti ini adalah pilihan terbaik untuk investasi jangka panjang dan hunian keluarga. Terletak di kawasan berkembang dengan akses mudah ke fasilitas umum, memiliki desain modern, taman privat, dan keamanan 24 jam.</p>
+
+            <h3 class="mt-6 text-xl font-semibold text-slate-900">Spesifikasi Tanah</h3>
+            <ul id="features-list" class="mt-3 list-disc space-y-2 pl-5 text-slate-600">
+              <li>Luas tanah: 200 m²</li>
+              <li>Status sertifikat: SHM</li>
+              <li>Akses jalan: Aspal</li>
+              <li>Hook: Listrik & air</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <aside class="space-y-5">
+        <div class="rounded-xl bg-white p-5 shadow-sm">
+          <p class="text-slate-500 text-sm">Harga</p>
+          <p id="price" class="mt-1 text-3xl font-bold text-emerald-700">Rp 8.500.000 / bulan</p>
+          <p id="price-note" class="mt-2 text-slate-600">Negosiasi tersedia untuk kontrak tahunan.</p>
+          <a id="whatsapp-link" href="https://wa.me/6283840335231" target="_blank" rel="noopener" class="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-emerald-600 px-4 py-3 text-white font-semibold hover:bg-emerald-500">Hubungi via WhatsApp</a>
+        </div>
+
+        <div class="rounded-xl bg-white p-5 shadow-sm">
+          <h4 class="font-semibold text-slate-900">Detail Lokasi</h4>
+          <p id="location-text" class="mt-2 text-slate-600">Jl. Raya Demak No. 7, Demak. 15 menit ke pusat kota, dekat sekolah, rumah sakit, dan pusat perbelanjaan.</p>
+          <div class="mt-3 rounded-md border border-slate-200 overflow-hidden">
+            <iframe id="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3626178475455!2d110.69109061530971!3d-6.861205294988202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7063a7bbdfe2b7%3A0x5801dfb9b11e060f!2sDemak!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <div class="rounded-xl bg-white p-5 shadow-sm">
+          <h4 class="font-semibold text-slate-900">Properti Lainnya</h4>
+          <ul id="other-properties" class="mt-3 space-y-3 text-slate-600">
+            <!-- Dinamis populated by JS -->
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script>
+        const API_BASE = 'https://script.google.com/macros/s/AKfycbyIEQPwE1YHQGQufIc2i9RjkeghTMcD6PZ6M9xIDpznJzQ_NVhqZmOu559vDHeWpV-wrQ/exec';
+
+    async function fetchProperties() {
+      try {
+        const response = await fetch(`${API_BASE}?action=properties`);
+        if (!response.ok) throw new Error('Network response was not ok');
+        return await response.json();
+      } catch (error) {
+        console.error('Error fetching properties:', error);
+        return [];
+      }
+    }
+
+    function getQueryParam(param) {
+      return new URLSearchParams(window.location.search).get(param);
+    }
+
+    function populateOtherProperties(properties, currentId) {
+      const ul = document.getElementById('other-properties');
+      ul.innerHTML = '';
+      const others = properties.filter(p => p.idnama_properti !== currentId).slice(0, 3);
+      others.forEach(p => {
+        const li = document.createElement('li');
+        li.className = 'rounded-lg border p-3 hover:bg-slate-50';
+        const a = document.createElement('a');
+        a.href = `detail.html?id=${encodeURIComponent(p.idnama_properti)}`;
+        a.className = 'block';
+        a.textContent = p.idnama_properti;
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+    }
+
+    function setDetail(property) {
+      document.getElementById('main-image').src = property.url_gambar || 'https://via.placeholder.com/800x400?text=No+Image';
+      document.getElementById('title').textContent = property.idnama_properti || 'Properti';
+      document.getElementById('summary').textContent = property.deskripsi || 'Deskripsi tidak tersedia.';
+      document.getElementById('price').textContent = formatRupiah(property.harga) || 'Harga tidak tersedia';
+      document.getElementById('price-note').textContent = 'Negosiasi tersedia.';
+      document.getElementById('description').textContent = property.deskripsi || 'Deskripsi lengkap tidak tersedia.';
+      document.getElementById('location-text').textContent = property.lokasi || 'Lokasi tidak tersedia.';
+      // Untuk map, gunakan url_maps jika ada, else berdasarkan lokasi
+      const mapUrl = property.url_maps || `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3626178475455!2d110.69109061530971!3d-6.861205294988202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7063a7bbdfe2b7%3A0x5801dfb9b11e060f!2s${encodeURIComponent(property.lokasi || 'Indonesia')}!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid`;
+      document.getElementById('location-map').src = mapUrl;
+
+      // Tags: asumsikan berdasarkan status atau lokasi
+      const tagsContainer = document.getElementById('tags');
+      tagsContainer.innerHTML = '';
+      if (property.status) {
+        const span = document.createElement('span');
+        span.className = 'rounded-full bg-emerald-100 px-3 py-1 text-emerald-700';
+        span.textContent = property.status;
+        tagsContainer.appendChild(span);
+      }
+      if (property.lokasi) {
+        const span = document.createElement('span');
+        span.className = 'rounded-full bg-blue-100 px-3 py-1 text-blue-700';
+        span.textContent = property.lokasi;
+        tagsContainer.appendChild(span);
+      }
+
+      // Gallery: asumsikan hanya satu gambar, atau tambah kolom di sheets
+      const gallery = document.getElementById('gallery');
+      gallery.innerHTML = '';
+      if (property.url_gambar) {
+        const img = document.createElement('img');
+        img.src = property.url_gambar;
+        img.alt = property.idnama_properti;
+        img.className = 'h-44 w-full rounded-lg object-cover';
+        gallery.appendChild(img);
+      }
+
+      // Spesifikasi Tanah: placeholder atau berdasarkan data
+      const featuresList = document.getElementById('features-list');
+      featuresList.innerHTML = `
+        <li>Luas tanah: ${property.luas_tanah || 'Tidak tersedia'}</li>
+        <li>Status sertifikat: ${property.status_sertifikat || 'Tidak tersedia'}</li>
+        <li>Akses jalan: ${property.akses_jalan || 'Tidak tersedia'}</li>
+        <li>Hook: ${property.hook || 'Tidak tersedia'}</li>
+      `;
+    }
+
+    function formatRupiah(amount) {
+      if (!amount) return 'Harga tidak tersedia';
+      const num = parseInt(amount.replace(/[^\d]/g, ''));
+      if (isNaN(num)) return amount;
+      return 'Rp ' + num.toLocaleString('id-ID');
+    }
+
+    function showDefault() {
+      document.getElementById('title').textContent = 'Properti tidak ditemukan';
+      document.getElementById('summary').textContent = 'Silakan kembali ke halaman utama untuk memilih properti terdaftar.';
+      document.getElementById('description').textContent = '';
+      document.getElementById('price').textContent = '-';
+      document.getElementById('whatsapp-link').href = 'https://wa.me/6283840335231';
+    }
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const id = getQueryParam('id');
+      if (!id) {
+        showDefault();
+        return;
+      }
+      const properties = await fetchProperties();
+      const property = properties.find(p => p.idnama_properti === id);
+      if (property) {
+        setDetail(property);
+        populateOtherProperties(properties, id);
+      } else {
+        showDefault();
+      }
+    });
+  </script>
+
+  <footer class="bg-slate-900 text-slate-200 py-8">
+    <div class="mx-auto max-w-6xl px-4 grid gap-6 md:grid-cols-3">
+      <div>
+        <h3 class="font-semibold text-white">Bina Jaya Abadi Properti</h3>
+        <p class="mt-2">Alamat: Bali, Indonesia</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white">Kontak</h3>
+        <p class="mt-2">Email: info@binajayaabadi.co</p>
+        <p>WhatsApp: +6283840335231</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white">Media Sosial</h3>
+        <ul class="mt-2 space-y-1">
+          <li><a href="#" class="text-emerald-300 hover:underline">Instagram</a></li>
+          <li><a href="#" class="text-emerald-300 hover:underline">Facebook</a></li>
+          <li><a href="#" class="text-emerald-300 hover:underline">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-6 text-center text-sm">© 2026 Bina Jaya Abadi Properti. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

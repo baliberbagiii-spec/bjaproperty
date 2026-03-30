@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Admin - Bina Jaya Abadi Properti</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen flex items-center justify-center">
+  <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
+    <h1 class="text-2xl font-bold text-center mb-6">Login Admin</h1>
+    <form id="login-form">
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-2">Username</label>
+        <input type="text" id="username" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500" required />
+      </div>
+      <div class="mb-6">
+        <label class="block text-sm font-medium mb-2">Password</label>
+        <input type="password" id="password" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500" required />
+      </div>
+      <button type="submit" class="w-full bg-emerald-600 text-white py-2 rounded hover:bg-emerald-500 transition">Login</button>
+    </form>
+    <p id="error-msg" class="text-red-500 text-sm mt-4 hidden">Username atau password salah.</p>
+  </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const errorMsg = document.getElementById('error-msg');
+
+      if (username === 'ncung' && password === 'gantengsekali87') {
+        localStorage.setItem('admin_logged_in', 'true');
+        window.location.href = 'admin.html';
+      } else {
+        errorMsg.classList.remove('hidden');
+      }
+    });
+  </script>
+</body>
+</html>

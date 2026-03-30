@@ -1,0 +1,9 @@
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.hero-bg {
+  background: linear-gradient(rgba(7, 52, 45, 0.4), rgba(7, 52, 45, 0.4)), url('https://international.unud.ac.id/protected/storage/file_summernote/4a0885ebc3c02b217cbf6c079eca6b37.jpg');
+  background-size: cover;
+  background-position: center;
+}
